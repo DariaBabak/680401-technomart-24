@@ -87,29 +87,24 @@
             <legend>ПРОИЗВОДИТЕЛИ:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" checked>BOSH
-                </label>
+                <input type="checkbox" id="bosh" checked>
+                <label for="bosh">BOSH</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox">ИНТЕРСКОЛ
-                </label>
+                <input type="checkbox" id="интерскол">
+                <label for="интерскол">ИНТЕРСКОЛ</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" checked>MAKITA
-                </label>
+                <input type="checkbox" id="makita" checked>MAKITA
+                <label for="makita">MAKITA</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox">DEWALT
-                </label>
+                <input type="checkbox" id="dewalt">DEWALT
+                <label for="dewalt">DEWALT</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox">HITACHI
-                </label>
+                <input type="checkbox" id="hitachi">HITACHI
+                <label for="hitachi">HITACHI</label>
               </li>
             </ul>
           </fieldset>
@@ -117,20 +112,16 @@
             <legend>ПИТАНИЕ</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input type="radio" name="power" value="0" checked>АККУМУЛЯТОРНЫЕ
-                </label>
+                <input type="radio" name="power" value="0" id="battery" checked>
+                <label for="battery">АККУМУЛЯТОРНЫЕ</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="radio" name="power" value="1">СЕТЕВЫЕ
-                </label>
+                <input type="radio" name="power" value="1" id="electric">
+                <label for="electric">СЕТЕВЫЕ</label>
               </li>
             </ul>
+            <button type="submit" class="button">ПОКАЗАТЬ</button>
           </fieldset>
-          <label>
-            <input type="submit" class="button" value="ПОКАЗАТЬ" aria-label="Показать">
-          </label>
         </form>
       </section>
       <section class="catalog">
@@ -160,14 +151,8 @@
             <h2>
               <a href="#">Перфоратор BOSH BFG 2000</a>
             </h2>
-            <button class="button button-buy">КУПИТЬ</button>
-            <section class="modal modal-buy">
-              <h2>Товар добавлен в корзину</h2>
-              <button class="modal-close" type="button">Закрыть</button>
-              <a class="button">ОФОРМИТЬ ЗАКАЗ</a>
-              <a class="button">ПРОДОЛЖИТЬ ПОКУПКИ</a>
-            </section>
-            <a class="button" href="#">В ЗАКЛАДКИ</a>
+            <button class="button button-buy" type="button">КУПИТЬ</button>
+            <button class="button button-bookmarks" type="button">В ЗАКЛАДКИ</button>
             <p class="catalog-item-price">
               <a class="button" href="#">12500 Р.</a>
             </p>
@@ -311,5 +296,14 @@
         </p>
       </section>
     </footer>
+    <section class="modal modal-buy">
+      <h2 class="visually-hidden">Товар добален в корзину</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <h2>Товар добален в корзину</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+        <a href="#" class="button">ОФОРМИТЬ ЗАКАЗ</a>
+        <button class="button" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      </form>
+    </section>
   </body>
 </html>
