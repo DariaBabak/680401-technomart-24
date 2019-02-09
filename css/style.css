@@ -11,31 +11,20 @@ body {
 a {
   text-decoration: none;
 }
-h1 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #32425c;
-  text-transform: uppercase;
-}
 .main-navigation {
-  background-color: #f1f5f7;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 24px;
   color: #32425c;
+  background-color: #f4f7f9;
 }
-ul {
+.main-navigation ul {
   list-style: none;
-}
-.header-top {
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #32425c;
 }
 .main-navigation a {
   color: #ffffff;
+}
+.header-top {
+  background-color: #293449;
 }
 .header-top a:hover {
   background-color: #212a3a;
@@ -43,163 +32,164 @@ ul {
 .header-top a:focus {
   background-color: #293449;
 }
-.purchases li:last-child {
+.order {
   background-color: #63a63e;
 }
-.purchases li:last-child:hover {
+.order a:hover {
   background-color: #5fbb2d;
 }
-i {
+.order a:focus {
+  background-color: #63a63e;
+}
+.description {
   font-size: 16px;
-  line-height: 23px;
   color: #ee3643;
+  font-style: italic;
 }
-address {
+.header-address {
   font-size: 14px;
-  line-height: 24px;
-  color: #32425c;
+  font-style: normal;
 }
-address span {
+.header-phone {
   font-size: 21px;
-  line-height: 21px;
   color: #ee3643;
+  border: solid #ffffff;
 }
-.user-navigation a{
+.button {
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  text-transform: uppercase;
+}
+.white-button {
   font-size: 21px;
-  line-height: 21px;
-  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+  text-transform: none;
 }
-  .user-navigation a:hover {
-    color: #ee3643;
+.user-navigation a:hover {
+  color: #ee3643;
 }
 .navigation {
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: 400;
-  color: #ffffff;
   background-color: #32425c;
 }
 .navigation a:hover {
   background-color: #293449;
 }
-.company h2,
-.contacts h2 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
+.container ul {
+  list-style: none;
 }
-.company p,
-.contacts p {
+.company,
+.contacts {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-}
-.company li {
-  font-size: 18px;
-  line-height: 20px;
   color: #000000;
 }
-.company a,
-.modal-open {
-  font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #ee3643;
-  }
-  .main-footer-navigation a,
- .feedback a {
-   color: #ffffff;
- }
-  .main-footer-navigation {
-    font-size: 18px;
-    line-height: 24px;
-    color: #ffffff;
-    background-color: #32425c;
-  }
-  .feedback {
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #293449;
-  }
-  .goods a,
-  .feedback a,
-  .developers a  {
-    color: #ffd180;
-  }
-.footer-social a {
-  color: #ffffff;
-}
-.breadcrumbs a{
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
-}
-.filters h2 {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
-}
-legend {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 17px;
+.caption {
+  font-size: 30px;
   line-height: 30px;
-  font-weight: 700;
-  color: #000000;
+  font-weight:400;
   text-transform: uppercase;
 }
-.filter-option {
+.transport {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+.red-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.main-footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+.main-footer ul {
+  list-style: none;
+}
+.sections a {
+  color: #ffffff;
+}
+.goods a {
+  color: #ffd180;
+}
+.footer-address {
+  font-style: normal;
+}
+.feedback {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+.feedback a {
+  color: #ffd180;
+}
+.breadcrumbs {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+.breadcrumbs a {
+  color: #000000;
+}
+.filter {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
-  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 }
-.filters button {
-  font-family: "PT Sans", Arial, sans-serif;
+.fieldset {
+  border: none;
+}
+.filter-name {
   font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
+  line-height: 30px;
+  font-weight: bold;
+}
+.filter-button {
+  font-size: 13px;
+  text-align: center;
   color: #000000;
-  text-transform: uppercase;
   background-color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+}
+.title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.catalog-item {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
 }
 .catalog-item a {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
   color: #000000;
 }
-s {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #999999;
-  text-decoration:line-through;
+.old-price {
+ font-size: 18px;
+ line-height: 20px;
+ font-weight: 700;
+ color: #999999;
+ text-decoration:line-through;
+}
+.red-arrow-button {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ee3643;
 }
 .button-buy {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #63a63e;
   border: solid #63a63e;
@@ -210,9 +200,6 @@ s {
 .button-bookmarks {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
   border: solid #63a63e;
@@ -220,12 +207,12 @@ s {
 .button-bookmarks:hover {
   border: solid #32425c;
 }
-  .modal-letter,
+.modal-letter,
   .modal-map,
   .modal-buy {
     display: none;
   }
-  .visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;

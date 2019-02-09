@@ -22,15 +22,18 @@
               <a href="#">Закладки: 0</a>
             </li>
             <li>
-              <a href="#">Корзина: 10</a>
+              <a href="#">Корзина: 0</a>
             </li>
-            <li>
+            <li class="order">
               <a href="#">Оформить заказ</a>
             </li>
           </ul>
         </div>
-        <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
-        <address>+7(812)555-05-05 <br> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <span class="description">Интернет-магазин строительных материалов и инструментов для ремонта</span>
+        <address class="header-address">
+          <span class="header-phone">+7(812)555-05-05</span><br>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
         <ul class="user-navigation">
           <li>
             <a href="#">Равшан Джамшутович</a>
@@ -52,7 +55,7 @@
           <li>
             <a href="company.html">Компания</a>
           </li>
-          <li class="main-navigation-current">
+          <li class="navigation-current">
             <a href="catalog.html">Каталог</a>
           </li>
           <li>
@@ -73,7 +76,7 @@
     <main class="container">
       <ul class="breadcrumbs">
         <li>
-          <a href="index.html">Гланая</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
           <a href="catalog.html">Каталог</a>
@@ -88,8 +91,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр</h2>
         <form action="https://echo.htmlacademy.ru" method="get" class="filter">
-          <fieldset>
-            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+          <fieldset class="fieldset">
+            <legend class="filter-name">ПРОИЗВОДИТЕЛИ:</legend>
             <ul>
               <li class="filter-option">
                 <input type="checkbox" id="bosh" checked>
@@ -100,21 +103,21 @@
                 <label for="interscol">ИНТЕРСКОЛ</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="makita" checked>MAKITA
+                <input type="checkbox" id="makita" checked>
                 <label for="makita">MAKITA</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="dewalt">DEWALT
+                <input type="checkbox" id="dewalt">
                 <label for="dewalt">DEWALT</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" id="hitachi">HITACHI
+                <input type="checkbox" id="hitachi">
                 <label for="hitachi">HITACHI</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>ПИТАНИЕ</legend>
+          <fieldset class="fieldset">
+            <legend class="filter-name">ПИТАНИЕ</legend>
             <ul>
               <li class="filter-option">
                 <input type="radio" name="power" value="0" id="battery" checked>
@@ -125,12 +128,12 @@
                 <label for="electric">СЕТЕВЫЕ</label>
               </li>
             </ul>
-            <button type="submit" class="button">ПОКАЗАТЬ</button>
+            <button type="submit" class="button filter-button">ПОКАЗАТЬ</button>
           </fieldset>
         </form>
       </section>
       <section class="catalog">
-        <h1>Перфораторы</h1>
+        <h1 class="title">Перфораторы</h1>
         <ul class="catalog-items">
           <li class="catalog-item">
             <h2>
@@ -138,8 +141,8 @@
             </h2>
             <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
             <p class="catalog-item-price">
-              <s>22500 Р.</s>
-              <a class="button" href="#">15500 Р.</a>
+              <s class="old-price">22500 Р.</s>
+              <a class="button red-arrow-button" href="#">15500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -148,8 +151,8 @@
             </h2>
             <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
             <p class="catalog-item-price">
-              <s>30500 Р.</s>
-              <a class="button" href="#">25500 Р.</a>
+              <s class="old-price">30500 Р.</s>
+              <a class="button red-arrow-button" href="#">25500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -159,7 +162,7 @@
             <button class="button button-buy" type="button">КУПИТЬ</button>
             <button class="button button-bookmarks" type="button">В ЗАКЛАДКИ</button>
             <p class="catalog-item-price">
-              <a class="button" href="#">12500 Р.</a>
+              <a class="button red-arrow-button" href="#">12500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -168,8 +171,8 @@
             </h2>
             <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
             <p class="catalog-item-price">
-              <s>22500 Р.</s>
-              <a class="button" href="#">15500 Р.</a>
+              <s class="old-price">22500 Р.</s>
+              <a class="button red-arrow-button" href="#">15500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -178,17 +181,17 @@
             </h2>
             <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
             <p class="catalog-item-price">
-              <s>30500 Р.</s>
-              <a class="button" href="#">25500 Р.</a>
+              <s class="old-price">30500 Р.</s>
+              <a class="button red-arrow-button" href="#">25500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
             <h2>
               <a href="#">Перфоратор BOSH BFG 2000</a>
             </h2>
-            <img src="Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
+            <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
             <p class="catalog-item-price">
-              <a class="button" href="#">12500 Р.</a>
+              <a class="button red-arrow-button" href="#">12500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -197,8 +200,8 @@
             </h2>
             <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000">
             <p class="catalog-item-price">
-              <s>22500 Р.</s>
-              <a class="button" href="#">15500 Р.</a>
+              <s class="old-price">22500 Р.</s>
+              <a class="button red-arrow-button" href="#">15500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -207,17 +210,17 @@
             </h2>
             <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 6000">
             <p class="catalog-item-price">
-              <s>30500 Р.</s>
-              <a class="button" href="#">25500 Р.</a>
+              <s class="old-price">30500 Р.</s>
+              <a class="button red-arrow-button" href="#">25500 Р.</a>
             </p>
           </li>
           <li class="catalog-item">
             <h2>
               <a href="#">Перфоратор BOSH BFG 2000</a>
             </h2>
-            <img src="img/Perforator_.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
+            <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 2000">
             <p class="catalog-item-price">
-              <a class="button" href="#">12500 Р.</a>
+              <a class="button red-arrow-button" href="#">12500 Р.</a>
             </p>
           </li>
         </ul>
@@ -259,7 +262,7 @@
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>
-        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-05</address>
+        <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7(812)555-05-05</address>
         <ul class="goods">
           <li>
             <a href="#">Материалы</a>
@@ -278,7 +281,7 @@
       <section class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="footer-copyright">
-          <b>©2010-2017 Компания "Техномарт"<br>Все права защищены</b>
+          ©2010-2017 Компания "Техномарт"<br>Все права защищены
         </p>
         <ul class="footer-social">
           <li>
