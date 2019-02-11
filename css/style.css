@@ -61,7 +61,7 @@ a {
   border: none;
   text-transform: uppercase;
 }
-.white-button {
+ .user-navigation .white-button {
   font-size: 21px;
   color: #000000;
   background-color: #ffffff;
