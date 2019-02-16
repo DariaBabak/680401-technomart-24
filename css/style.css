@@ -36,42 +36,61 @@ a {
 }
 .header-top {
   display: flex;
-  justify-content: space-between;
-}
-.main-header-logo {
-  width: 220px;
-  height: 42px;
-  margin-bottom: auto;
-  margin-right: 10px;
-  display: flex;
 }
 .logo {
-width: 220px;
-height: 42px;
+  background-color: #ee3643;
+  width: 200px;
+  padding: 11px;
+  border-bottom: solid 5px #b52933;
+  margin: 0;
+  display: block;
 }
-.header-top a:hover {
-  background-color: #212a3a;
+.main-logo:hover {
+  background-color: #ca2c37;
+  border-bottom: solid 5px #9a212a;
 }
-.header-top a:focus {
+.main-logo:focus {
+  background-color: #ee3643;
+  border-bottom: solid 5px #b52933;
+}
+.main-logo:active {
+  background-color: #ba2732;
+  border-bottom: solid 5px #8e1e26;
+}
+.search input {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
   background-color: #293449;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  margin: 0;
+  margin-left: 35px;
 }
 .purchases {
   display: flex;
-  height: 42px;
+  margin: 0;
+  justify-content: space-between;
 }
 .purchases a {
-  margin: 10px;
-}
-.purchases:first-child {
-  width: 125px;
-}
-.purchases:nth-child(2n) {
   width: 150px;
+  padding: 10px 10px 10px 45px;
+  display: block;
 }
-.order {
+.purchases a:hover {
+  background-color: #212a3a;
+}
+.purchases a:focus {
+  background-color: #293449;
+}
+.purchases a:active {
+  background-color: #161d29;
+}
+.order a {
   background-color: #63a63e;
   width: 150px;
-  display: flex;
+  padding: 10px;
 }
 .order a:hover {
   background-color: #5fbb2d;
@@ -79,11 +98,13 @@ height: 42px;
 .order a:focus {
   background-color: #63a63e;
 }
+.order a:active {
+  background-color: #518534;
+}
 .header-wrapper {
   width: 100%;
   height: 280px;
   background-color: #f3f7f9;
-
 }
 .header-center {
   display: flex;
@@ -97,14 +118,20 @@ height: 42px;
 }
 .header-address {
   font-size: 14px;
+  line-height: 14px;
   font-style: normal;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 .header-phone {
   font-size: 21px;
+  line-height: 21px;
+  text-align: center;
   color: #ee3643;
   border: solid #ffffff;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
 }
 .button {
   font-size: 14px;
@@ -115,6 +142,9 @@ height: 42px;
 .user-navigation {
   display: flex;
   justify-content: space-around;
+  width: 282px;
+  height: 47px;
+  margin: 0;
 }
 .user-navigation li {
   display: flex;
@@ -122,28 +152,45 @@ height: 42px;
 }
  .user-navigation .white-button {
   font-size: 21px;
+  line-height: 21px;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
   text-transform: none;
+  padding: 10px;
 }
 .user-navigation a:hover {
   color: #ee3643;
 }
+.user-navigation a:active {
+  color: #cacaca;
+}
 .navigation {
   background-color: #32425c;
   display: flex;
-  padding: 10px;
   justify-content: space-between;
+  height: 55px;
+  border-bottom: solid 5px #293449;
+}
+.navigation a {
+  padding: 20px;
+  display: block;
 }
 .navigation a:hover {
   background-color: #293449;
+}
+.navigation a:focus {
+  background-color: #293449;
+}
+.navigation a:active {
+  color: #a8abaf;
+  background-color: #1d2739;
 }
 .container {
   display: flex;
   padding: 10px;
   justify-content: space-between;
-  margin-bottom: 85px;
-  }
+  margin-bottom: 76px;
 }
 .container ul {
   list-style: none;
@@ -161,7 +208,14 @@ height: 42px;
 .contacts {
   width: 300px;
 }
+.company p {
+  margin-bottom: 25px;
+}
+.contacts p {
+  margin-bottom: 31px;
+}
 .caption {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight:400;
@@ -170,7 +224,18 @@ height: 42px;
 .transport {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 40px;
+  margin: 0;
+}
+.map-img {
+  margin-bottom: 33px;
+}
+.contacts .red-button {
+  height: 38px;
+  width: 300px;
+}
+.company .red-button {
+  height: 38px;
 }
 .red-button {
   font-family: "Cuprum", Arial, sans-serif;
@@ -205,19 +270,23 @@ height: 42px;
 .footer-center,
 .feedback {
   display: flex;
+  justify-content: space-between;
 }
 .sections {
   display: flex;
   justify-content: space-between;
 }
-.sections li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.sections a {
+  width: 110px;
+  padding: 10px;
 }
 .goods {
   display: flex;
   justify-content: space-between;
+}
+.goods a {
+  width: 110px;
+  padding: 10px;
 }
 .feedback {
   font-size: 16px;
@@ -311,7 +380,6 @@ height: 42px;
 .green-border-button:hover {
   border: solid #32425c;
 }
-.logo,
 .cart {
   background-color: #ee3643;
 }
