@@ -452,7 +452,7 @@ opacity: 0.5;
 .pagination-list {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 201px;
 }
 .pagination-list .pagination-item {
   font-size: 13px;
