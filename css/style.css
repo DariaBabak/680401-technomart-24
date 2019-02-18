@@ -36,6 +36,7 @@ a {
 }
 .header-top {
   display: flex;
+  justify-content: space-between;
 }
 .logo {
   background-color: #ee3643;
@@ -71,11 +72,12 @@ a {
 .purchases {
   display: flex;
   margin: 0;
-  justify-content: space-between;
+  margin-left: auto;
+  justify-content: flex-end;
 }
 .purchases a {
-  width: 150px;
-  padding: 10px 10px 10px 45px;
+  min-width: 100px;
+  padding: 9px 10px 9px 45px;
   display: block;
 }
 .purchases a:hover {
@@ -89,8 +91,8 @@ a {
 }
 .order a {
   background-color: #63a63e;
-  width: 150px;
-  padding: 10px;
+  min-width: 100px;
+  padding: 9px;
 }
 .order a:hover {
   background-color: #5fbb2d;
@@ -173,7 +175,7 @@ a {
   border-bottom: solid 5px #293449;
 }
 .navigation a {
-  padding: 20px;
+  padding: 18px 20px;
   display: block;
 }
 .navigation a:hover {
@@ -226,6 +228,7 @@ a {
   font-size: 18px;
   line-height: 40px;
   margin: 0;
+  margin-bottom: 13px;
 }
 .map-img {
   margin-bottom: 33px;
@@ -235,7 +238,9 @@ a {
   width: 300px;
 }
 .company .red-button {
-  height: 38px;
+  width: 207px;
+  display: block;
+  padding: 6px;
 }
 .red-button {
   font-family: "Cuprum", Arial, sans-serif;
@@ -291,7 +296,9 @@ a {
 .feedback {
   font-size: 16px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
+  display: flex;
 }
 .feedback-wrapper {
   width: 100%;
@@ -302,14 +309,53 @@ a {
 .feedback a {
   color: #ffd180;
 }
+.feedback a:active {
+  color: #ee3643;
+}
+.sections a:hover {
+text-decoration: underline;
+}
+.sections a:active {
+opacity: 0.5;
+}
+.goods a:hover {
+  text-decoration: underline;
+}
+.goods a:active {
+opacity: 0.5;
+}
 .breadcrumbs {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 390px;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.container-catalog {
+  display: flex;
+  flex-direction: column;
 }
 .breadcrumbs a {
   color: #000000;
+}
+.wrapper {
+  display: flex;
+}
+.container-catalog .title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: block;
+  background-color: #f2f6f8;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.filters {
+  width: 220px;
 }
 .filter {
   font-family: "PT Sans", Arial, sans-serif;
@@ -334,15 +380,25 @@ a {
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
 }
-.title {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
+.catalog {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.catalog-items {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .catalog-item {
+  width: 200px;
+  height: 318px;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
+  padding: 10px;
 }
 .catalog-item a {
   color: #000000;
@@ -393,12 +449,18 @@ a {
   text-transform: none;
   text-decoration: underline;
 }
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
 .pagination-list .pagination-item {
   font-size: 13px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
   border: solid 1px #e5e5e5;
+  padding: 4px 10px;
 }
  .pagination-list .pagination-item-current {
   color: #ffffff;
