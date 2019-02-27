@@ -466,14 +466,16 @@ opacity: 0.5;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #eaeaea;
-  flex-shrink: 1;
 }
 .catalog-item:hover {
   box-shadow: 5px 5px 5px 5px rgba(41, 52, 73, 50%);
+  display: flex;
+  justify-content: space-around;
 }
 .catalog-item a {
   color: #000000;
@@ -494,9 +496,6 @@ opacity: 0.5;
   color: #ffffff;
   background-color: #ee3643;
   padding: 10px;
-  position: absolute;
-  left: 70px;
-  top: 240px;
 }
 .green-button {
   font-size: 14px;
@@ -527,6 +526,7 @@ opacity: 0.5;
 .product-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .cart-full {
   background-color: #ee3643;
