@@ -449,6 +449,8 @@ opacity: 0.5;
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -463,19 +465,19 @@ opacity: 0.5;
   margin: 0;
 }
 .catalog-item {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 20px;
-  margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #eaeaea;
+  padding: 3px;
 }
 .catalog-item:hover {
   box-shadow: 5px 5px 5px 5px rgba(41, 52, 73, 50%);
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 .catalog-item a {
   color: #000000;
@@ -495,7 +497,7 @@ opacity: 0.5;
   font-weight: bold;
   color: #ffffff;
   background-color: #ee3643;
-  padding: 10px;
+  padding: 7px;
 }
 .green-button {
   font-size: 14px;
@@ -503,8 +505,10 @@ opacity: 0.5;
   color: #ffffff;
   background-color: #63a63e;
   border: solid #63a63e;
-  padding: 5px 20px;
+  padding: 5px 43px;
   border-radius: 2px;
+  display: block;
+  margin: 40px 20px 10px 20px;
 }
 .green-button:hover {
   background-color: #5fbb2d;
@@ -517,8 +521,10 @@ opacity: 0.5;
   color: #000000;
   background-color: #ffffff;
   border: solid #63a63e;
-  padding: 5px 20px;
+  padding: 5px 30px;
   border-radius: 2px;
+  display: block;
+  margin: 0 20px;
 }
 .green-border-button:hover {
   border: solid #32425c;
