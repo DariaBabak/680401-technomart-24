@@ -11,6 +11,10 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .main-header {
   background-color: #f4f7f9;
 }
@@ -65,7 +69,7 @@ a {
 .logo:active {
   background-color: #ba2732;
 }
-.search input {
+.search-input {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -75,17 +79,17 @@ a {
   width: 270px;
   margin: 0;
 }
-.search input::-webkit-input-placeholder {
+.search-input::-webkit-input-placeholder {
   color: #ffffff;
  }
- .search input:hover {
+ .search-input:hover {
    background-color: #212a3a;
  }
- .search input:focus {
+ .search-input:focus {
    background-color: #ffffff;
    color: #000000;
  }
- .search input:active {
+ .search-input:active {
    background-color: #293449;
  }
 .purchases {
@@ -584,18 +588,90 @@ border: solid 1px #bdc6ca;
 .catalog-item:hover .product-buttons {
   display: block;
 }
+.search {
+  position: relative;
+}
+.search-input::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-image: url(/img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 15px;
+  left: 16px;
+}
+.purchases .bookmarks {
+  position: relative;
+}
+.purchases .bookmarks::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  background-image: url(/img/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 12px;
+  left: 27px;
+}
+.cart {
+  position: relative;
+}
+.cart::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-image: url(/img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 12px;
+  left: 18px;
+}
+.header-phone {
+  position: relative;
+}
+.header-phone::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 12px;
+  left: 18px;
+}
+.user-navigaton a {
+  position: relative;
+}
+.user-navigaton a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  background-image: url(/img/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 14px;
+  left: 15px;
+}
   .modal-map,
   .modal-buy,
   .modal-letter {
-    display: none;
-  }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect (0 0 0 0);
-    overflow: hidden;
-  }
+   display: none;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
