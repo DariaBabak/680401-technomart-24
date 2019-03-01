@@ -70,8 +70,7 @@ img {
   background-color: #ba2732;
 }
 .search-wrapper {
-  display: flex;
-}
+  position: relative;
 }
 .search-input {
   font-size: 17px;
@@ -82,6 +81,13 @@ img {
   width: 270px;
   padding: 12px;
   margin: 0;
+  padding-left: 49px;
+  display: flex;
+  width: 270px;
+  position: relative;
+}
+.search-input::-ms-clear {
+  display: none;
 }
 .search-input::-webkit-input-placeholder {
   color: #ffffff;
@@ -92,9 +98,16 @@ img {
  .search-input:focus {
    background-color: #ffffff;
    color: #000000;
+   border: none;
  }
  .search-input:active {
    background-color: #293449;
+   border: none;
+ }
+ .icon {
+   position: absolute;
+   top: 11px;
+   left: 19px;
  }
 .purchases {
   display: flex;
@@ -125,7 +138,7 @@ img {
 .order a {
   background-color: #63a63e;
   margin: 0;
-  padding: 9px 21px;
+  padding: 9px;
   text-align: center;
   display: block;
 }
@@ -164,7 +177,7 @@ img {
   text-align: center;
   color: #ee3643;
   border: solid #ffffff;
-  padding: 8px 30px 8px 50px;
+  padding: 8px 30px 8px 55px;
   margin: 0;
   margin-bottom: 4px;
   display: block;
@@ -195,11 +208,33 @@ img {
   margin: 0;
   display: block;
 }
-.user-navigation a:first-child {
+.user-navigation .log-in {
   padding-left: 47px;
+  padding-right: 25px;
+  position: relative;
 }
-.user-navigationa :nth-child(2) {
-  padding-right: 50px;
+.user-navigation .registration {
+  padding: 10px 25px;
+}
+.user-navigation .user {
+  position: relative;
+  width: 100%;
+  padding: 12px 24px;
+}
+.user svg:first-child {
+  top: 12px;
+  left: 12px;
+  position: absolute;
+}
+.user svg:last-child {
+  top: 13px;
+  left: 250px;
+  position: absolute;
+}
+.log-in svg {
+  position: absolute;
+  top: 11px;
+  left: 16px;
 }
 .user-navigation a:hover {
   color: #ee3643;
@@ -632,7 +667,7 @@ border: solid 1px #bdc6ca;
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
-  left: 17px;
+  left: 16px;
   opacity: 0.3;
 }
 .purchases .cart:hover:before {
@@ -656,16 +691,66 @@ border: solid 1px #bdc6ca;
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 9px;
-  left: 18px;
+  left: 16px;
 }
 .user-navigation .white-button:hover path {
   fill: #32425c;
 }
-.social-button:hover path {
-fill: #ee3643;
-}
-.search-wrapper:hover path {
+.search-wrapper:focus path {
   fill: #f0525d;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social li {
+  position: relative;
+}
+.footer-social li:first-child::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background-image: url(../img/icon-vk.svg);
+  background-repeat: no-repeat;
+  background-color: #212a3a;
+  background-position: 8px 13px;
+  top: 9px;
+  left: 16px;
+  border-radius: 20px;
+}
+.footer-social li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background-image: url(../img/icon-fb.svg);
+  background-repeat: no-repeat;
+  background-color: #212a3a;
+  background-position: 15px 10px;
+  top: 9px;
+  left: 16px;
+  border-radius: 20px;
+}
+.footer-social li:last-child::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  background-image: url(../img/icon-insta.svg);
+  background-repeat: no-repeat;
+  background-color: #212a3a;
+  background-position: 10px 10px;
+  top: 9px;
+  left: 16px;
+  border-radius: 20px;
+}
+.footer-social li:first-child:hover::before,
+.footer-social li:first-child:active::before,
+.footer-social li:nth-child(2):hover::before,
+.footer-social li:nth-child(2):active::before,
+.footer-social li:last-child:hover::before,
+.footer-social li:last-child:active::before {
+  background-color: #ee3643;
 }
   .modal-map,
   .modal-buy,
