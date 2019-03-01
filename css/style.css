@@ -69,14 +69,18 @@ img {
 .logo:active {
   background-color: #ba2732;
 }
+.search-wrapper {
+  display: flex;
+}
+}
 .search-input {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
   border: none;
-  padding: 12px 46px;
   width: 270px;
+  padding: 12px;
   margin: 0;
 }
 .search-input::-webkit-input-placeholder {
@@ -97,7 +101,9 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 450px;
+  max-width: 450px;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 .purchases li {
   flex-grow: 1;
@@ -105,6 +111,7 @@ img {
 .purchases a {
   display: block;
   padding: 9px 9px 9px 44px;
+  max-width: 150px;
 }
 .purchases a:hover {
   background-color: #212a3a;
@@ -118,8 +125,9 @@ img {
 .order a {
   background-color: #63a63e;
   margin: 0;
-  padding: 9px 12px;
+  padding: 9px 21px;
   text-align: center;
+  display: block;
 }
 .order a:hover {
   background-color: #5fbb2d;
@@ -588,20 +596,6 @@ border: solid 1px #bdc6ca;
 .catalog-item:hover .product-buttons {
   display: block;
 }
-.search {
-  position: relative;
-}
-.search-input::before {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  background-image: url(/img/icon-search.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  top: 15px;
-  left: 16px;
-}
 .purchases .bookmarks {
   position: relative;
 }
@@ -610,13 +604,23 @@ border: solid 1px #bdc6ca;
   position: absolute;
   width: 16px;
   height: 18px;
-  background-image: url(/img/icon-bookmark.svg);
+  background-image: url(../img/icon-bookmark.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
-  left: 27px;
+  left: 17px;
+  opacity: 0.3;
 }
-.cart {
+.purchases .bookmarks:hover:before {
+  opacity: 1;
+}
+.purchases .bookmarks:focus:before {
+  opacity: 0.3;
+}
+.purchases .bookmarks:active:before {
+  opacity: 0.3;
+}
+.purchases .cart {
   position: relative;
 }
 .cart::before {
@@ -624,11 +628,21 @@ border: solid 1px #bdc6ca;
   position: absolute;
   width: 17px;
   height: 17px;
-  background-image: url(/img/icon-cart.svg);
+  background-image: url(../img/icon-cart.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 12px;
-  left: 18px;
+  left: 17px;
+  opacity: 0.3;
+}
+.purchases .cart:hover:before {
+  opacity: 1;
+}
+.purchases .cart:focus:before {
+  opacity: 0.3;
+}
+.purchases .cart:active:before {
+  opacity: 0.3;
 }
 .header-phone {
   position: relative;
@@ -638,25 +652,20 @@ border: solid 1px #bdc6ca;
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(/img/icon-phone.svg);
+  background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  top: 12px;
+  top: 9px;
   left: 18px;
 }
-.user-navigaton a {
-  position: relative;
+.user-navigation .white-button:hover path {
+  fill: #32425c;
 }
-.user-navigaton a::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 19px;
-  background-image: url(/img/icon-login.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  top: 14px;
-  left: 15px;
+.social-button:hover path {
+fill: #ee3643;
+}
+.search-wrapper:hover path {
+  fill: #f0525d;
 }
   .modal-map,
   .modal-buy,
