@@ -702,10 +702,13 @@ border: solid 1px #bdc6ca;
 .footer-social {
   display: flex;
 }
+.footer-social a {
+  display: block;
+}
 .footer-social li {
   position: relative;
 }
-.footer-social li:first-child::before {
+.vk::before {
   content: "";
   position: absolute;
   width: 43px;
@@ -718,7 +721,7 @@ border: solid 1px #bdc6ca;
   left: 16px;
   border-radius: 20px;
 }
-.footer-social li:nth-child(2)::before {
+.fb::before {
   content: "";
   position: absolute;
   width: 43px;
@@ -731,7 +734,7 @@ border: solid 1px #bdc6ca;
   left: 16px;
   border-radius: 20px;
 }
-.footer-social li:last-child::before {
+.insta::before {
   content: "";
   position: absolute;
   width: 43px;
@@ -744,12 +747,12 @@ border: solid 1px #bdc6ca;
   left: 16px;
   border-radius: 20px;
 }
-.footer-social li:first-child:hover::before,
-.footer-social li:first-child:active::before,
-.footer-social li:nth-child(2):hover::before,
-.footer-social li:nth-child(2):active::before,
-.footer-social li:last-child:hover::before,
-.footer-social li:last-child:active::before {
+.vk:hover::before,
+.vk:active::before,
+.fb:hover::before,
+.fb:active::before,
+.insta:hover::before,
+.insta:active::before {
   background-color: #ee3643;
 }
   .modal-map,
