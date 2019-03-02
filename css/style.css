@@ -269,7 +269,7 @@ img {
 }
 .container {
   padding: 15px;
-  margin-bottom: 66px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -292,8 +292,20 @@ img {
 .company p {
   margin-bottom: 23px;
 }
+.company li {
+  position: relative;
+}
 .contacts p {
   margin-bottom: 31px;
+}
+.company li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
 }
 .caption {
   font-family: "Cuprum", Arial, sans-serif;
@@ -301,6 +313,7 @@ img {
   line-height: 30px;
   font-weight:400;
   text-transform: uppercase;
+  margin: 30px 0 25px 0;
 }
 .map-img {
   margin-bottom: 33px;
@@ -308,11 +321,13 @@ img {
 .contacts .red-button {
   height: 38px;
   width: 100%;
+  border-radius: 2px;
 }
 .company .red-button {
   width: 207px;
   display: block;
   padding: 6px;
+  border-radius: 2px;
 }
 .company li {
   font-family: "Cuprum", Arial, sans-serif;
@@ -322,6 +337,8 @@ img {
 }
 .company ul {
   margin-bottom: 39px;
+  padding: 0;
+  padding-left: 15px;
 }
 .red-button {
   font-family: "Cuprum", Arial, sans-serif;
@@ -390,12 +407,17 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
-.footer-feedback,
-.developers {
+.footer-feedback {
   padding: 20px;
   display: block;
+  max-width: 160px;
+  margin-left: 78px;
+}
+.developers {
+  padding: 20px 15px;
+  display: block;
+  max-width: 160px;
 }
 .footer-feedback a:hover,
 .developers a:hover {
@@ -418,9 +440,9 @@ img {
   color: #ee3643;
 }
 .footer-copyright {
+  display: block;
   padding-top: 20px;
-  margin-right: 34px;
-
+  max-width: 310px;
 }
 .sections a:hover {
 text-decoration: underline;
@@ -440,6 +462,7 @@ opacity: 0.5;
   line-height: 18px;
   text-transform: uppercase;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 390px;
   margin-left: 0;
@@ -447,8 +470,32 @@ opacity: 0.5;
   margin-bottom: 10px;
   list-style: none;
 }
+.breadcrumbs li {
+  position: relative;
+}
 .breadcrumbs a {
   color: #000000;
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.breadcrumb-index {
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  position: absolute;
+}
+.breadcrumbs li::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    width: 8px;
+    height: 12px;
+    background: url(../img/icon-right-small.svg);
 }
 .container-catalog {
   display: flex;
@@ -707,7 +754,8 @@ border: solid 1px #bdc6ca;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto;
+  max-width: 320px;
+  padding-left: 144px;
 }
 .footer-social a {
   display: block;
@@ -716,8 +764,8 @@ border: solid 1px #bdc6ca;
   height: 43px;
   background-color: #212a3a;
   background-position: center;
-  border-radius: 20px;
-  }
+  border-radius: 50%;
+}
 .vk {
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
@@ -738,7 +786,7 @@ border: solid 1px #bdc6ca;
 .insta:active {
   background-color: #ee3643;
 }
-  .modal-map,
+.modal-map,
   .modal-buy,
   .modal-letter {
    display: none;

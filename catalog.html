@@ -91,7 +91,7 @@
     <main class="container center container-catalog">
       <ul class="breadcrumbs">
         <li>
-          <a href="index.html">Главная</a>
+          <a class="breadcrumb-index" href="index.html"><span class="visually-hidden">Главная</span></a>
         </li>
         <li>
           <a href="catalog.html">Каталог</a>
@@ -110,25 +110,25 @@
           <form action="https://echo.htmlacademy.ru" method="get" class="filter">
             <fieldset class="fieldset">
               <legend class="filter-name">Производители:</legend>
-              <ul>
+              <ul class="manufacturers">
                 <li class="filter-option">
-                  <input type="checkbox" id="bosh" checked>
+                  <input class="checkbox visually-hidden" type="checkbox" id="bosh" checked>
                   <label for="bosh">Bosh</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" id="interscol">
+                  <input class="checkbox visually-hidden" type="checkbox" id="interscol">
                   <label for="interscol">Интерскол</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" id="makita" checked>
+                  <input class="checkbox visually-hidden" type="checkbox" id="makita" checked>
                   <label for="makita">Makita</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" id="dewalt">
+                  <input class="checkbox visually-hidden" type="checkbox" id="dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" id="hitachi">
+                  <input class="checkbox visually-hidden" type="checkbox" id="hitachi">
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -137,11 +137,11 @@
               <legend class="filter-name">Питание</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="radio" name="power" value="0" id="battery" checked>
+                  <input class="visually-hidden" type="radio" name="power" value="0" id="battery" checked>
                   <label for="battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option">
-                  <input type="radio" name="power" value="1" id="electric">
+                  <input class="visually-hidden" type="radio" name="power" value="1" id="electric">
                   <label for="electric">Сетевые</label>
                 </li>
               </ul>
@@ -279,7 +279,7 @@
       <nav class="main-footer-navigation">
         <div class="footer-wrapper">
           <div class="footer-top center">
-            <a class="main-logo" href="index.html">
+            <a class="main-logo">
               <img class="logo" src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт">
             </a>
             <ul class="sections">
@@ -323,17 +323,17 @@
         <section class="feedback center">
           <h2 class="visually-hidden">Обратная связь</h2>
           <p class="footer-copyright">
-            © 2010-2017 Компания "Техномарт"<br>Все права защищены
+            © 2010-2019 Компания «Техномарт»<br>Все права защищены
           </p>
           <ul class="footer-social">
             <li>
-              <a class="social-button" href="https://vk.com/" aria-label="Техномарт на ВКонтакте"><span class="visually-hidden>">Вконтакте</span></a>
+              <a class="social-button vk" href="https://vk.com/" aria-label="Техномарт на ВКонтакте"><span class="visually-hidden">Вконтакте</span></a>
             </li>
             <li>
-              <a class="social-button" href="https://www.facebook.com/" aria-label="Техномарт на Фейсбуке"><span class="visually-hidden>Фейсбук</span></a>
+              <a class="social-button fb" href="https://www.facebook.com/" aria-label="Техномарт на Фейсбуке"><span class="visually-hidden">Фейсбук</span></a>
             </li>
             <li>
-              <a class="social-button" href="https://www.instagram.com/" aria-label="Техномарт на Инстаграме"><span class="visually-hidden>Инстаграм</span></a>
+              <a class="social-button insta" href="https://www.instagram.com/" aria-label="Техномарт на Инстаграме"><span class="visually-hidden">Инстаграм</span></a>
             </li>
           </ul>
           <p class="footer-feedback">
