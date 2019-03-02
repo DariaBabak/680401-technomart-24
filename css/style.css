@@ -268,8 +268,8 @@ img {
   background-color: #1d2739;
 }
 .container {
-  padding: 10px;
-  margin-bottom: 76px;
+  padding: 15px;
+  margin-bottom: 66px;
   display: flex;
   justify-content: space-between;
 }
@@ -349,14 +349,9 @@ img {
 .main-footer ul {
   list-style: none;
 }
-.sections a {
-  color: #ffffff;
-}
-.goods a {
-  color: #ffd180;
-}
 .footer-address {
   font-style: normal;
+  padding: 30px 0px 0px 3px;
 }
 .footer-top,
 .footer-center {
@@ -367,20 +362,26 @@ img {
   display: flex;
   width: 548px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
 }
 .sections a {
-  padding: 20px;
+  padding: 39px 0px 0px 0px;
   display: block;
+  color: #ffffff;
 }
 .goods {
   display: flex;
   width: 548px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.goods a {
+.footer-center .goods a {
   display: block;
   margin: 0;
-  padding: 0;
+  color: #ffd180;
+  padding: 12px 0px 0px 23px;
+
 }
 .feedback {
   font-size: 16px;
@@ -388,11 +389,13 @@ img {
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 .footer-feedback,
 .developers {
-  padding-top: 20px;
+  padding: 20px;
+  display: block;
 }
 .footer-feedback a:hover,
 .developers a:hover {
@@ -416,6 +419,7 @@ img {
 }
 .footer-copyright {
   padding-top: 20px;
+  margin-right: 34px;
 
 }
 .sections a:hover {
@@ -701,58 +705,37 @@ border: solid 1px #bdc6ca;
 }
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
 }
 .footer-social a {
   display: block;
-}
-.footer-social li {
-  position: relative;
-}
-.vk::before {
-  content: "";
-  position: absolute;
+  margin: 18px 2px;
   width: 43px;
   height: 43px;
+  background-color: #212a3a;
+  background-position: center;
+  border-radius: 20px;
+  }
+.vk {
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
-  background-color: #212a3a;
-  background-position: 8px 13px;
-  top: 9px;
-  left: 16px;
-  border-radius: 20px;
 }
-.fb::before {
-  content: "";
-  position: absolute;
-  width: 43px;
-  height: 43px;
+.fb {
   background-image: url(../img/icon-fb.svg);
   background-repeat: no-repeat;
-  background-color: #212a3a;
-  background-position: 15px 10px;
-  top: 9px;
-  left: 16px;
-  border-radius: 20px;
 }
-.insta::before {
-  content: "";
-  position: absolute;
-  width: 43px;
-  height: 43px;
+.insta {
   background-image: url(../img/icon-insta.svg);
   background-repeat: no-repeat;
-  background-color: #212a3a;
-  background-position: 10px 10px;
-  top: 9px;
-  left: 16px;
-  border-radius: 20px;
 }
-.vk:hover::before,
-.vk:active::before,
-.fb:hover::before,
-.fb:active::before,
-.insta:hover::before,
-.insta:active::before {
+.vk:hover,
+.vk:active,
+.fb:hover,
+.fb:active,
+.insta:hover,
+.insta:active {
   background-color: #ee3643;
 }
   .modal-map,
