@@ -242,6 +242,19 @@ img {
 .user-navigation a:active {
   color: #cacaca;
 }
+.underlined-buttons a:first-child {
+  position: relative;
+}
+.underlined-buttons a:first-child::after {
+  content: "";
+  position: absolute;
+  right: -55px;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: #32425c;
+  border-radius: 50%;
+}
 .navigation {
   background-color: #32425c;
   display: flex;
@@ -488,7 +501,7 @@ opacity: 0.5;
   background-position: 0 2px;
   position: absolute;
 }
-.breadcrumbs li::before {
+.breadcrumbs a:not(.breadcrumb-index)::before {
     content: "";
     position: absolute;
     left: -25px;
@@ -635,6 +648,7 @@ opacity: 0.5;
   justify-content: space-between;
   width: 220px;
   padding-left: 25px;
+
 }
 .cart-full {
   background-color: #ee3643;
@@ -747,7 +761,13 @@ border: solid 1px #bdc6ca;
 .user-navigation .white-button:hover path {
   fill: #32425c;
 }
+.search-wrapper:hover path {
+  fill: #f0525d;
+}
 .search-wrapper:focus path {
+  fill: #f0525d;
+}
+.search-wrapper:active path {
   fill: #f0525d;
 }
 .footer-social {
